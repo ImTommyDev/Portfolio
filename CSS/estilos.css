@@ -1,0 +1,26 @@
+body {
+  background-color: antiquewhite;
+}
+nav {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Hace que el nav ocupe el ancho completo de la pantalla */
+    padding: 10px 0;
+    justify-content: center; /* Centra el contenido dentro del nav */
+  }
+.ulNav {
+  display: flex;
+  list-style: none;
+  gap: 20px; /*espacio entre los elementos*/
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+}
+.ulNav li a {
+    color: black;
+    text-decoration: none;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600; 
+    font-size: 22px;
+  }
