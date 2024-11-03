@@ -1,32 +1,136 @@
 body {
-  background-color: antiquewhite;
+  background: tan;
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 300;
 }
+
+/*Sección nav*/
 nav {
-  background-color: bisque;
-  display: flex;
-  align-items: center;
+  font-family: BonaNova;
+  font-weight: 500;
   width: 100%; /* Hace que el nav ocupe el ancho completo de la pantalla */
   padding: 10px 0;
+  display: flex;
+  align-items: center;
   justify-content: center; /* Centra el contenido dentro del nav */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0; /* Se alinea a la izquierda */
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 .ulNav {
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
   display: flex;
   list-style: none;
   gap: 20px; /*espacio entre los elementos*/
-  padding: 0;
-  margin: 0;
-  margin-left: 15px;
 }
 .ulNav li a {
-  color: black;
+  color: #5f517c;
   text-decoration: none;
-  font-family: "Dancing Script", cursive;
-  font-weight: 600;
-  font-size: 22px;
+  font-size: 23px;
   transition: color 0.4s ease, font-size 0.3s ease;
 }
 
 .ulNav li a:hover {
+  font-size: 26px;
+  background: linear-gradient(90deg, #f44285, #f8f06a); /* Degradado de color */
+  -webkit-background-clip: text; /* Clip del fondo al texto */
+  color: transparent; /* Hace el color del texto transparente para mostrar el degradado */
+}
+
+/*Sección sobre mí*/
+#sobreMi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 20px;
+  /* background-color: #f5f5f5; Fondo para la sección */
+  background-image: url("../Imagenes/emojis.png");
+  background-size: cover; /* Asegura que la imagen cubra toda la sección */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo de la tarjeta */
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  max-width: 700px;
+  width: 90%;
+  text-align: center; /* Centra el texto */
+}
+
+/* Imagen dentro de la tarjeta */
+.imagenTarjeta img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Contenido de la tarjeta */
+.contenidoTarjeta {
+  color: #333;
+}
+
+.contenidoTarjeta h2 {
+  margin: 0;
+  font-family: "BonaNova", serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f44285, #f8f06a);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.contenidoTarjeta h3 {
+  margin: 8px 0;
+  font-family: "BonaNova", serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #7d7d7d;
+}
+
+.contenidoTarjeta p {
+  margin-top: 15px;
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+.contenidoTarjeta p span{
+  background: linear-gradient(90deg, #f44285, #f8f06a);
+  -webkit-background-clip: text;
+  color: transparent;
   font-weight: 900;
-  font-size: 25px;
+}
+
+.contenidoTarjeta button {
+  padding: 15px 70px;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(90deg, #f44285, #f8f06a);
+  color: white;
+  font-size: 1em; 
+  cursor: pointer;
+  transition: all 0.6s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenidoTarjeta button:hover {
+  transform: translateY(-2px); /* Eleva el botón */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
 }
