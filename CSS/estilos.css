@@ -118,7 +118,7 @@ nav {
   font-weight: 900;
 }
 
-.contenidoTarjeta button {
+/* .contenidoTarjeta button {
   padding: 15px 70px;
   border-radius: 15px;
   border: none;
@@ -131,6 +131,6 @@ nav {
 }
 
 .contenidoTarjeta button:hover {
-  transform: translateY(-2px); /* Eleva el botón */
+  transform: translateY(-2px); Eleva el botón
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
-}
+} */
