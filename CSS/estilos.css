@@ -1,5 +1,5 @@
 body {
-  background: tan;
+  background: #212121;
   margin: 0;
   font-family: Montserrat;
   font-weight: 300;
@@ -9,38 +9,47 @@ body {
 nav {
   font-family: BonaNova;
   font-weight: 500;
-  width: 100%; /* Hace que el nav ocupe el ancho completo de la pantalla */
+  width: 100%;
+  /* Hace que el nav ocupe el ancho completo de la pantalla */
   padding: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el contenido dentro del nav */
+  justify-content: center;
+  /* Centra el contenido dentro del nav */
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
-  left: 0; /* Se alinea a la izquierda */
+  left: 0;
+  /* Se alinea a la izquierda */
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #171717/*rgba(255, 255, 255, 0.95);*/
 }
+
 .ulNav {
   margin: 0;
   margin-left: 15px;
   padding: 0;
   display: flex;
   list-style: none;
-  gap: 20px; /*espacio entre los elementos*/
+  gap: 20px;
+  /*espacio entre los elementos*/
 }
+
 .ulNav li a {
-  color: #5f517c;
+  color: #fed468;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 22px;
   transition: color 0.4s ease, font-size 0.3s ease;
 }
 
 .ulNav li a:hover {
   font-size: 26px;
-  background: linear-gradient(90deg, #f44285, #f8f06a); /* Degradado de color */
-  -webkit-background-clip: text; /* Clip del fondo al texto */
-  color: transparent; /* Hace el color del texto transparente para mostrar el degradado */
+  background: linear-gradient(90deg, #f44285, #f8f06a);
+  /* Degradado de color */
+  -webkit-background-clip: text;
+  /* Clip del fondo al texto */
+  color: transparent;
+  /* Hace el color del texto transparente para mostrar el degradado */
 }
 
 /*Sección sobre mí*/
@@ -53,8 +62,9 @@ nav {
   position: relative;
   padding: 20px;
   /* background-color: #f5f5f5; Fondo para la sección */
-  background-image: url("../Imagenes/emojis.png");
-  background-size: cover; /* Asegura que la imagen cubra toda la sección */
+  background-image: url("../Imagenes/transparentEmojis.png");
+  background-size: cover;
+  /* Asegura que la imagen cubra toda la sección */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -70,7 +80,8 @@ nav {
   padding: 30px;
   max-width: 700px;
   width: 90%;
-  text-align: center; /* Centra el texto */
+  text-align: center;
+  /* Centra el texto */
 }
 
 /* Imagen dentro de la tarjeta */
@@ -111,7 +122,7 @@ nav {
   line-height: 1.3em;
 }
 
-.contenidoTarjeta p span{
+.contenidoTarjeta p span {
   background: linear-gradient(90deg, #f44285, #f8f06a);
   -webkit-background-clip: text;
   color: transparent;
