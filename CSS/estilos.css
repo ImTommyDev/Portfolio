@@ -9,34 +9,32 @@ body {
 nav {
   font-family: BonaNova;
   font-weight: 500;
-  width: 100%;
-  /* Hace que el nav ocupe el ancho completo de la pantalla */
-  padding: 10px 0;
+  width: 85%;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Centra el contenido dentro del nav */
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   position: fixed;
-  top: 0;
-  left: 0;
-  /* Se alinea a la izquierda */
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1000;
-  background-color: #171717; /*rgba(255, 255, 255, 0.95);*/
+  background-color: rgba(23, 23, 23, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .ulNav {
   margin: 0;
-  margin-left: 15px;
   padding: 0;
   display: flex;
   list-style: none;
   gap: 20px;
-  /*espacio entre los elementos*/
 }
 
 .ulNav li a {
-  color: #fed468;
+  color: #969696;
   text-decoration: none;
   font-size: 22px;
   transition: color 0.4s ease, font-size 0.3s ease;
@@ -44,12 +42,9 @@ nav {
 
 .ulNav li a:hover {
   font-size: 26px;
-  background: linear-gradient(90deg, #f44285, #f8f06a);
-  /* Degradado de color */
+  background: linear-gradient(90deg, #969696, #f0f0f0);
   -webkit-background-clip: text;
-  /* Clip del fondo al texto */
   color: transparent;
-  /* Hace el color del texto transparente para mostrar el degradado */
 }
 
 /*Sección sobre mí*/
@@ -61,10 +56,8 @@ nav {
   height: 100vh;
   position: relative;
   padding: 20px;
-  /* background-color: #f5f5f5; Fondo para la sección */
-  background-image: url("../Images/transparentEmojis.png");
+  background-image: url("../Images/backgroundAboutMe.jpg");
   background-size: cover;
-  /* Asegura que la imagen cubra toda la sección */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -74,17 +67,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.80);
   border-radius: 15px;
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
   padding: 30px;
   max-width: 700px;
   width: 90%;
   text-align: center;
-  /* Centra el texto */
 }
 
-/* Imagen dentro de la tarjeta */
 .imagenTarjeta img {
   border-radius: 50%;
   width: 180px;
@@ -93,7 +84,6 @@ nav {
   margin-bottom: 20px;
 }
 
-/* Contenido de la tarjeta */
 .contenidoTarjeta {
   color: #333;
 }
@@ -103,7 +93,7 @@ nav {
   font-family: "BonaNova", serif;
   font-size: 1.8em;
   font-weight: 700;
-  background: linear-gradient(90deg, #f44285, #f8f06a);
+  background: linear-gradient(90deg, #969696, #3b3b3b);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -123,25 +113,8 @@ nav {
 }
 
 .contenidoTarjeta p span {
-  background: linear-gradient(90deg, #f44285, #f8f06a);
+  background: linear-gradient(90deg, #969696, #3b3b3b);
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 900;
 }
-
-/* .contenidoTarjeta button {
-  padding: 15px 70px;
-  border-radius: 15px;
-  border: none;
-  background: linear-gradient(90deg, #f44285, #f8f06a);
-  color: white;
-  font-size: 1em; 
-  cursor: pointer;
-  transition: all 0.6s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.contenidoTarjeta button:hover {
-  transform: translateY(-2px); Eleva el botón
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
-} */
