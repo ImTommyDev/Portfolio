@@ -44,7 +44,6 @@ nav {
   font-size: 26px;
   background: linear-gradient(90deg, #969696, #f0f0f0);
   -webkit-background-clip: text;
-  color: transparent;
 }
 
 /*Sección sobre mí*/
@@ -117,4 +116,69 @@ nav {
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 900;
+}
+/*Sección de estudios*/
+#formacion-experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #2A2A2A;
+}
+
+#formacion-experiencia h2 {
+  font-family: "BonaNova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #f0f0f0;
+}
+
+.subseccion {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.subseccion h3 {
+  font-family: "BonaNova", serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  border: 2px solid;
+  border-image-source: linear-gradient(90deg, #b0b0b0, #d6d6d6);
+  border-image-slice: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.item h4 {
+  margin-top: 0;
+  font-family: "BonaNova", serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #333;
+}
+
+.item p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #555;
+}
+
+.item p span {
+  font-weight: bold;
+  background: linear-gradient(90deg, #b0b0b0, #7d7d7d);
+  -webkit-background-clip: text;
+  color: transparent;
 }
