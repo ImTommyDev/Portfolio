@@ -67,9 +67,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(32, 30, 30, 0.9); /* Ajuste al color oscuro */
+  background-color: rgba(32, 30, 30, 0.9);
   border-radius: 15px;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3); /* Más marcado para el modo oscuro */
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
   padding: 30px;
   max-width: 700px;
   width: 90%;
@@ -85,7 +85,7 @@ nav {
 }
 
 .contenidoTarjeta {
-  color: #f0f0f0; /* Color de texto claro */
+  color: #f0f0f0;
 }
 
 .contenidoTarjeta h2 {
@@ -101,14 +101,14 @@ nav {
   font-family: "BonaNova", serif;
   font-size: 1.3em;
   font-weight: 500;
-  color: #a6a6a6; /* Un gris más suave para el subtítulo */
+  color: #a6a6a6;
 }
 
 .contenidoTarjeta p {
   margin-top: 15px;
   font-size: 1.1em;
   line-height: 1.3em;
-  color: #e1e1e1; /* Texto más suave en lugar de blanco puro */
+  color: #e1e1e1;
 }
 
 .contenidoTarjeta p span {
@@ -116,7 +116,7 @@ nav {
     90deg,
     #969696,
     #4f4f4f
-  ); /* Gradiente ajustado a tonos oscuros */
+  ); 
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 900;
@@ -347,4 +347,104 @@ nav {
   background: linear-gradient(90deg, #8c7b68, #7d7d7d);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transform: translateY(-3px);
+}
+/* Sección Redes */
+#redes {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #202325;
+  border-top: 3px solid #3b3b3b;
+}
+
+#redes h2 {
+  font-family: "BonaNova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+#redes p {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  color: #7d7d7d;
+  margin-bottom: 30px;
+}
+
+/* Sección Redes */
+#redes {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #202325;
+  border-top: 3px solid #3b3b3b;
+}
+
+#redes h2 {
+  font-family: "BonaNova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+#redes p {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  color: #7d7d7d;
+  margin-bottom: 30px;
+}
+
+/* Sección Redes */
+#redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #2a2a2a;
+  border-top: 3px solid #726a5e;
+}
+
+#redes h2 {
+  font-family: "BonaNova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #dfdcd7;
+}
+
+#redes p {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  color: #dfdcd7;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estilo de los íconos */
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.red-social {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.red-social img {
+  width: auto;
+  height: 100%;
+  max-height: 60px;
+  max-width: 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.red-social:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
