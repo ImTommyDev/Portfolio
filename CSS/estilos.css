@@ -5,7 +5,7 @@ body {
   font-weight: 300;
 }
 
-/*Sección nav*/
+/* Sección nav */
 nav {
   font-family: BonaNova;
   font-weight: 500;
@@ -14,15 +14,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #726a5e;
   position: fixed;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  background-color: #f0f0f0;
+  background-color: #2a2a2a;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ulNav {
@@ -34,7 +34,7 @@ nav {
 }
 
 .ulNav li a {
-  color: #f0f0f0;
+  color: #dfdcd7;
   text-decoration: none;
   font-size: 22px;
   transition: color 0.4s ease, font-size 0.3s ease;
@@ -42,11 +42,12 @@ nav {
 
 .ulNav li a:hover {
   font-size: 26px;
-  background: linear-gradient(90deg, #969696, #f0f0f0);
+  background: linear-gradient(90deg, #726a5e, #4f4f4f);
   -webkit-background-clip: text;
+  color: transparent;
 }
 
-/*Sección sobre mí*/
+/* Sección sobre mí */
 #sobreMi {
   display: flex;
   justify-content: center;
@@ -66,9 +67,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(32, 30, 30, 0.9); /* Ajuste al color oscuro */
   border-radius: 15px;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3); /* Más marcado para el modo oscuro */
   padding: 30px;
   max-width: 700px;
   width: 90%;
@@ -84,7 +85,7 @@ nav {
 }
 
 .contenidoTarjeta {
-  color: #333;
+  color: #f0f0f0; /* Color de texto claro */
 }
 
 .contenidoTarjeta h2 {
@@ -100,22 +101,28 @@ nav {
   font-family: "BonaNova", serif;
   font-size: 1.3em;
   font-weight: 500;
-  color: #7d7d7d;
+  color: #a6a6a6; /* Un gris más suave para el subtítulo */
 }
 
 .contenidoTarjeta p {
   margin-top: 15px;
   font-size: 1.1em;
   line-height: 1.3em;
+  color: #e1e1e1; /* Texto más suave en lugar de blanco puro */
 }
 
 .contenidoTarjeta p span {
-  background: linear-gradient(90deg, #969696, #3b3b3b);
+  background: linear-gradient(
+    90deg,
+    #969696,
+    #4f4f4f
+  ); /* Gradiente ajustado a tonos oscuros */
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 900;
 }
-/*Sección de estudios*/
+
+/* Sección Formación y Experiencia */
 #formacion-experiencia {
   display: flex;
   flex-direction: column;
@@ -130,7 +137,7 @@ nav {
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 40px;
-  color: #f0f0f0;
+  color: #dfdcd7;
 }
 
 .subseccion {
@@ -143,17 +150,15 @@ nav {
   font-family: "BonaNova", serif;
   font-size: 2em;
   font-weight: 600;
-  color: #f0f0f0;
+  color: #dfdcd7;
   margin-bottom: 20px;
 }
 
 .item {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #1e1e1e;
   border-radius: 15px;
-  border: 2px solid;
-  border-image-source: linear-gradient(90deg, #b0b0b0, #d6d6d6);
-  border-image-slice: 1;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border: 2px solid #726a5e;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   padding: 20px 30px;
   margin-bottom: 20px;
   text-align: left;
@@ -164,22 +169,23 @@ nav {
   font-family: "BonaNova", serif;
   font-size: 1.8em;
   font-weight: 600;
-  color: #333;
+  color: #dfdcd7;
 }
 
 .item p {
   margin: 10px 0;
   font-size: 1.1em;
   line-height: 1.5em;
-  color: #555;
+  color: #dfdcd7;
 }
 
 .item p span {
   font-weight: bold;
-  background: linear-gradient(90deg, #b0b0b0, #7d7d7d);
+  background: linear-gradient(90deg, #726a5e, #4f4f4f);
   -webkit-background-clip: text;
   color: transparent;
 }
+
 /* Sección Tecnologías */
 #tecnologias {
   display: flex;
@@ -188,7 +194,7 @@ nav {
   justify-content: center;
   padding: 50px 20px;
   background-color: #2a2a2a;
-  border-top: 3px solid #b0b0b0;
+  border-top: 3px solid #726a5e;
 }
 
 #tecnologias h2 {
@@ -196,7 +202,7 @@ nav {
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 40px;
-  color: #f0f0f0;
+  color: #dfdcd7;
 }
 
 .categoria-tecnologia {
@@ -212,7 +218,7 @@ nav {
   font-family: "BonaNova", serif;
   font-size: 2em;
   font-weight: 600;
-  color: #f0f0f0;
+  color: #dfdcd7;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -227,12 +233,10 @@ nav {
 
 .tecnologia {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #1e1e1e;
   border-radius: 15px;
-  border: 2px solid;
-  border-image-source: linear-gradient(90deg, #b0b0b0, #d6d6d6);
-  border-image-slice: 1;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border: 2px solid #726a5e;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   padding: 20px;
   width: 120px;
 }
@@ -246,15 +250,16 @@ nav {
 .tecnologia p {
   font-size: 1em;
   font-weight: 500;
-  color: #333;
+  color: #dfdcd7;
   margin: 0;
 }
 
 .separador {
   width: 2px;
   height: 100px;
-  background: linear-gradient(90deg, #b0b0b0, #d6d6d6);
+  background: linear-gradient(90deg, #726a5e, #4f4f4f);
 }
+
 /* Sección Proyectos */
 #proyectos {
   display: flex;
@@ -263,7 +268,7 @@ nav {
   justify-content: center;
   padding: 50px 20px;
   background-color: #2a2a2a;
-  border-top: 3px solid #b0b0b0;
+  border-top: 3px solid #726a5e;
 }
 
 #proyectos h2 {
@@ -271,14 +276,14 @@ nav {
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 40px;
-  color: #f0f0f0;
+  color: #dfdcd7;
 }
 
 .contenido-proyectos {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #1e1e1e;
   border-radius: 15px;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.5);
   padding: 30px;
   max-width: 700px;
   width: 90%;
@@ -287,7 +292,59 @@ nav {
 .contenido-proyectos p {
   font-size: 1.2em;
   font-weight: 500;
-  color: #333;
+  color: #dfdcd7;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo de la sección Currículum */
+#curriculum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #2a2a2a;
+  border-top: 3px solid #726a5e;
+}
+
+#curriculum h2 {
+  font-family: "BonaNova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #dfdcd7;
+}
+
+.contenido-curriculum {
+  text-align: center;
+  color: #dfdcd7;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  max-width: 700px;
+}
+
+.boton-descarga {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton-descarga a {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #dfdcd7;
+  background: linear-gradient(90deg, #726a5e, #4f4f4f);
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.boton-descarga a:hover {
+  background: linear-gradient(90deg, #8c7b68, #7d7d7d);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
