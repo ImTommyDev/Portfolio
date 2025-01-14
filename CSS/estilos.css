@@ -112,11 +112,7 @@ nav {
 }
 
 .contenidoTarjeta p span {
-  background: linear-gradient(
-    90deg,
-    #969696,
-    #4f4f4f
-  ); 
+  background: linear-gradient(90deg, #969696, #4f4f4f);
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 900;
@@ -447,4 +443,110 @@ nav {
 .red-social:hover img {
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+/* Sección Contacto */
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #2a2a2a; 
+  border-top: 3px solid #726a5e;
+}
+
+#contacto h2 {
+  font-family: "BonaNova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #dfdcd7; 
+}
+
+#contacto p {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  color: #dfdcd7;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#contacto a {
+  color: #726a5e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#contacto a:hover {
+  color: #8c7b68;
+}
+
+/* Estilo del formulario */
+.formulario-contacto {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.campo label {
+  font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
+  color: #dfdcd7;
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  border: 2px solid #726a5e;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #dfdcd7;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+  color: #7d7d7d;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #8c7b68;
+  box-shadow: 0 0 8px rgba(140, 123, 104, 0.6);
+}
+
+/* Botón de enviar */
+.btn-enviar {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #dfdcd7;
+  background: linear-gradient(90deg, #726a5e, #4f4f4f);
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(90deg, #8c7b68, #7d7d7d);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
